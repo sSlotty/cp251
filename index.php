@@ -1,5 +1,4 @@
 <?php 
-
 if(file_exists("counter.txt")){
     $f = fopen("counter.txt","r");
 
