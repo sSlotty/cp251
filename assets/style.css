@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt');
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+  background: url("https://cutewallpaper.org/21/1920x1080-gif/Animated-GIFs-Animation-on-Behance.gif") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body>.constainer-fulid {
+  padding-top: 60px;
+}
+
+.table {
+  border: none;
+}
+
+.table td {
+  border-top: none;
+  border-right: 5px whitesmoke solid;
+}
+
+.table th {
+  border-top: none;
+  border-right: 5px whitesmoke solid;
+
+}
+
+.pic-bg {
+  background: linear-gradient(312deg, #3a3df3, #ddaf21, #c17225, #295ee1);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 2s ease infinite;
+  -moz-animation: AnimationName 2s ease infinite;
+  -o-animation: AnimationName 2s ease infinite;
+  animation: AnimationName 2s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 10%
+  }
+
+  50% {
+    background-position: 100% 91%
+  }
+
+  100% {
+    background-position: 0% 10%
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 10%
+  }
+
+  50% {
+    background-position: 100% 91%
+  }
+
+  100% {
+    background-position: 0% 10%
+  }
+}
+
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 10%
+  }
+
+  50% {
+    background-position: 100% 91%
+  }
+
+  100% {
+    background-position: 0% 10%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 10%
+  }
+
+  50% {
+    background-position: 100% 91%
+  }
+
+  100% {
+    background-position: 0% 10%
+  }
+}
+
+a {
+  color: inherit;
+}
+
+.top {
+  margin-top: 100px;
+}
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+
+
+/* NAV */
+
+.navbar {
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  background-color: #ecbf2b;
+
+}
+
+.navbar .btn {
+  font-size: 80%;
+  border-radius: 3rem;
+  letter-spacing: .1rem;
+  opacity: 1;
+  margin-right: 3px;
+  margin-top: 3px
+}
+
+
+
+
+/* Scorll Bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #44c5ed;
+  border: 0px none #41AFD1;
+  border-radius: 50px;
+}
+
+
+/* Shadown card */
+section .topten {
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.topten .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 992px) {
+  .topten .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .topten:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+
+
+
+}
+
+
+/* Circle */
+.circle {
+  height: 20%;
+  /* ความสูงปรับให้เป็นออโต้ */
+  width: 20%;
+  /* ความสูงปรับให้เป็นออโต้ */
+  border: none;
+  border-radius: 600px;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  margin: auto auto;
+  display: block;
+
+}
+
+@media (min-width: 992px) {
+  .circle .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .circle:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+
+
+
+}
+
+.circle2 {
+  height: 50%;
+  /* ความสูงปรับให้เป็นออโต้ */
+  width: 50%;
+  /* ความสูงปรับให้เป็นออโต้ */
+  border: none;
+  border-radius: 600px;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  margin: auto auto;
+  display: block;
+
+}
+
+
+/* Paralaxx */
+.parallax-window {
+  min-height: 300px;
+  background: transparent;
+}
+
+/* Footer */
+
+footer {
+  background-color: #1b294d;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/* jumbotorn */
+
+.jumbotron{
+    background-color: whitesmoke;
+    opacity: 90%;
+}

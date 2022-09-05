@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE anime_catalog [ <!ELEMENT anime_catalog (anime+)>
+<!ELEMENT anime (name, country, genre, characters, year?, pic)>
+	<!ELEMENT name (#PCDATA)>
+		<!ELEMENT country (#PCDATA)>
+			<!ELEMENT genre (#PCDATA)>
+				<!ELEMENT year (#PCDATA)>
+					<!ELEMENT pic (#PCDATA)>
+						<!ELEMENT characters (character+)>
+							<!ELEMENT character (#PCDATA)>
+								<!ATTLIST anime type NMTOKENS #IMPLIED>
+									<!ATTLIST character gender (female|male|unknown) #REQUIRED>
+										]>
+										<anime_catalog>
+											<anime type="TV,CARTOON">
+												<name>Doraemon</name>
+												<country>Japan</country>
+												<genre>Comedy</genre>
+												<year>1969</year>
+												<pic>https://i.pinimg.com/236x/44/4c/8f/444c8ffb8050aab51caccfee17209aaa--kawaii-illustration-ias.jpg</pic>
+												<characters>
+													<character gender="male">Doraemon</character>
+													<character gender="male">Nobita</character>
+													<character gender="female">Shisuka</character>
+													<character gender="male">Suneo</character>
+													<character gender="male">Jaian</character>
+												</characters>
+											</anime>
+											<anime type="TV,Movie,Cartoon">
+												<name>Inazuma Eleven</name>
+												<country>Japan</country>
+												<genre> Commady, Sport
+												</genre>
+												<year>2008</year>
+												<pic>https://upload.wikimedia.org/wikipedia/th/thumb/d/d8/%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B8%B2%E0%B8%AA%E0%B8%B6%E0%B8%A1%E0%B8%B0%E0%B8%AD%E0%B8%B5%E0%B9%80%E0%B8%A5%E0%B8%9F%E0%B9%80%E0%B8%A7%E0%B8%99_%28%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%87%E0%B8%B0%29.jpg/250px-%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B8%B2%E0%B8%AA%E0%B8%B6%E0%B8%A1%E0%B8%B0%E0%B8%AD%E0%B8%B5%E0%B9%80%E0%B8%A5%E0%B8%9F%E0%B9%80%E0%B8%A7%E0%B8%99_%28%E0%B8%A1%E0%B8%B1%E0%B8%87%E0%B8%87%E0%B8%B0%29.jpg</pic>
+												<characters>
+													<character gender="male">Endō Mamoru</character>
+													<character gender="male">Ishido Shuuji</character>
+													<character gender="male">Kidō Yūto</character>
+												</characters>
+											</anime>
+											<anime type="">
+												<name>Crayon Miss Shin</name>
+												<country>Japan</country>
+												<genre>Genres: Commady</genre>
+												<year></year>
+												<pic>https://upload.wikimedia.org/wikipedia/th/thumb/b/be/Crayon_Shin-chan.jpg/250px-Crayon_Shin-chan.jpg</pic>
+												<characters>
+													<character gender="male">โนะฮาร่า ชินโนะสึเกะ</character>
+													<character gender="female">โนะฮาร่า ฮิมาวาริ </character>
+													<character gender="female">โนะฮาร่า มิซาเอะ</character>
+													<character gender="male">โนะฮาร่า ฮิโรชิ</character>
+													<character gender="unknow">เจ้าขาว</character>
+
+
+												</characters>
+											</anime>
+										</anime_catalog>

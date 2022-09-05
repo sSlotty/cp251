@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe | Lab2</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+</head>
+
+<body>
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="../assets/images/Banner-FB-SLotty.jpg">
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container collapse navbar-collapse  mt-3 mb-3">
+
+            <ul class="navbar-nav">
+                <li class="nav-item mx-auto">
+                    <a href="../lab1/main.html" type="button" class="btn"
+                        style="background-color: #5941A9; color: white;">Main
+                        page</a>
+                </li>
+                <!-- <li class="nav-item mx-auto">
+                    <a href="myclass.html" type="button" target="_BLANK" class="btn"
+                        style="background-color: #ffffff; color: rgb(0, 0, 0);">My class</a>
+                </li> -->
+            </ul>
+
+
+        </div>
+    </nav>
+
+    <!-- Contain -->
+    <div class="container-fluid pb-5" style="margin-top: 100px;">
+
+        <div class="row">
+
+            <!-- Row 1 Left -->
+
+            <div class="col-xl-3 mt-5 pl-5 pr-5">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="../lab1/index.html" style="text-decoration: none; color: #443d3d;">Lab 1</a>
+                        <i class="fas fa-tags" style="font-size: 20px;"></i>
+                    </li>
+
+
+                    <li class="list-group-item d-flex justify-content-between align-items-center ">
+                        <div class="dropdown">
+                            <a style="cursor: pointer;" id="dropdown-menu" data-toggle="dropdown" aria-expanded="false">
+                                Lab 2
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <a href="../lab2/map.html" class="dropdown-item" type="button">Image map</a>
+                                <a href="../lab2/iframe.html" class="dropdown-item" type="button">iframe</a>
+                                <a href="../lab2/form.html" class="dropdown-item" type="button">form</a>
+                            </div>
+                        </div>
+                        <i class="fas fa-align-center" style="font-size: 20px;"></i>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <!-- Row 2 Mid -->
+            <div class="col-xl-9 mt-5">
+
+                <div class="container-fluid">
+                    <div class="card topten pr-3 pl-3 pt-5 pb-5" style="background-color: #4281A4;">
+
+                        <div class="card">
+                            <div class="card-body">
+
+                                <!-- Write content -->
+                                <div class="btn btn-group btn-group-toggle">
+                                    <a role="button" class="btn btn-danger" href="https://msds.science.swu.ac.th/"
+                                        target="iframe">MSDS</a>
+                                    <a role="button" class="btn btn-secondary" href="https://swu.ac.th/"
+                                        target="iframe">มหาวิทยาลัยศรีนครินทรวิโรฒ</a>
+                                </div>
+                                <hr>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="" name="iframe"></iframe>
+                                </div>
+                                <hr>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Row 3 Right-->
+            <!-- <div class="col-md-2 pr-5 pl-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium non nobis tenetur impedit nemo magni deserunt delectus. Eveniet recusandae, aliquam soluta beatae corrupti placeat enim quod amet quo blanditiis dolorem!
+            </div> -->
+        </div>
+
+    </div>
+
+    <footer id="sticky-footer" class="py-4 text-white mt-5">
+        <div class="container text-center" style="font-size: 15px;">
+            <div>Copyright © 2020 <a href="mailto:thanathip.oat@g.swu.ac.th">THANATHIP CHANASRI</a></div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

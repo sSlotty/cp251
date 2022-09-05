@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt');
+
+/* css list */
+/* 1) footer */
+/* 2) Jumbotorn */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+  background: url("https://cutewallpaper.org/21/1920x1080-gif/Animated-GIFs-Animation-on-Behance.gif") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Footer */
+
+footer {
+  background-color: #1b294d;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/* jumbotorn */
+
+.jumbotron {
+  /* background-color: whitesmoke; */
+  opacity: 98%;
+}
+
+/* Paralaxx */
+.parallax-window {
+  min-height: 600px;
+  background: transparent;
+}
+
+/* Navbar */
+.bg-nav {
+  background-color: #b088f8;
+  opacity: 99%;
+}
+
+/* .navbar {
+  margin-bottom: 50px;
+} */
+
+.nav-item::hover {
+  color: white;
+}
+
+.fas,
+.fab {
+  color: #1b294d;
+  font-size: 20px;
+}
+
+.nav-item>a {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* card */
+.touch {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.touch .card {
+  border: none;
+  border-radius: 1rem;
+}
+
+@media (min-width: 992px) {
+  .touch .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    transition: .2s;
+  }
+
+}
+
+.shadow-p {
+  border-style: solid;
+  border-width: 10px 10px 10px 10px;
+  border-color: rgb(255, 255, 255);
+}
+
+.progress:hover{
+  margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    transition: .2s;
+}
+
+.animate:hover {
+  animation: animate__lightSpeedInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+

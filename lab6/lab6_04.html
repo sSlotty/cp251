@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <!-- import CSS CDN  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="../assets/style.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+</head>
+<style>
+    footer {
+        background-color: #1b294d;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+</style>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-3">
+                <div class="list-group">
+                    <a href="index.php" class="list-group-item list-group-item-action"> หน้าแรก </a>
+                    <a href="lab6_01.html" class="list-group-item list-group-item-action"> Lab1 </a>
+                    <a href="lab6_02.html" class="list-group-item list-group-item-action"> Lab2 </a>
+                    <a href="lab6_03.html" class="list-group-item list-group-item-action"> Lab3 </a>
+                    <a href="lab6_04.html" class="list-group-item list-group-item-action active"> Lab4 </a>
+                    <a href="lab6_05.html" class="list-group-item list-group-item-action"> Lab5 </a>
+                    <a href="http://thanathip.rf.gd/lab6_06.html" class="list-group-item list-group-item-action"> Lab6 </a>
+                    <a href="../index.php" class="list-group-item list-group-item-action"> Back to main </a>
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-9">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div id="name" style="background:#227711; color:blanchedalmond">THANATHIP CHANASRI</div>
+
+                        <button type="button" class="btn btn-secondary mt-2 btn-sm">Animate</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="sticky-footer" class="py-4 text-white mt-5">
+        <div class="container text-center" style="font-size: 15px;">
+            <div>Copyright © 2020 <a href="mailto:thanathip.oat@g.swu.ac.th">THANATHIP CHANASRI</a></div>
+        </div>
+    </footer>
+
+    <!-- Import Java Script CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+
+    <script>
+        
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#name").animate({
+                    fontSize: '100px',
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

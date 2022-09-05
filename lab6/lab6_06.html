@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Mobile</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+
+</head>
+
+<script>
+    $(document).ready(function () {
+        $('[href="#home"]').click(function () {
+            $('[data-role="content"]').html(
+                "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismodtincidunt ut laoreet dolore magna aliquam erat. </p>"
+            );
+        });
+
+        $('[href="#contact"]').click(function () {
+            $('[data-role="content"]').html("<b>ติดต่อได้ที่ E-email : thanathip.oat@g.swu.ac.th</b>");
+        });
+
+    });
+</script>
+
+<body>
+    <!-- the home page: -->
+    <div data-role="page" id="home">
+
+        <!-- home page header: -->
+        <div data-role="header">
+            <h1>Home</h1>
+            <div data-role="navbar">
+                <ul>
+                    <!-- classes "ui-btn-active" and "ui-state-persist" -->
+                    <!-- make "Home" link active: -->
+                    <li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
+                    <li><a href="#contact" data-icon="grid">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- home page content: -->
+        <div data-role="content">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat.</p>
+            <p class="orientation"></p>
+        </div>
+        <!-- home page footer: -->
+        <div data-role="footer">
+            <h4><a href="mailto:info@example.com">info@example.com</a></h4>
+        </div>
+    </div>
+    <!-- the contact page: -->
+
+    <script>
+        //handler for orientation-change event:
+        $(window).on('orientationchange', function (event) {
+            //on orientation change, set content of div with appropriate text:
+            $('.orientation').html('You are in <em>' + event.orientation + '</em> mode.');
+        });
+        //call event handler when page first loads, to set orientation message:
+        $(window).orientationchange();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab10</title>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                myFunction(this);
+            }
+        };
+        xhttp.open("GET", "lab10.xml", true);
+        xhttp.send();
+
+        function myFunction(xml) {
+            var xmlDoc = xml.responseXML;
+            var x = xmlDoc.getElementsByTagName("anime");
+            document.write(
+                "<h1>My Favourite Animes</h1><br><table border=\"1=\"><td>Anime</td><td>Year</td><td>Country</td><td>Genre</td><td>Type</td><td>Character</td>"
+            );
+            for (i = 0; i < x.length; i++) {
+                var name1 = x[i].getElementsByTagName("name").item(0).innerHTML;
+                var year = x[i].getElementsByTagName("year").item(0).innerHTML;
+                var country = x[i].getElementsByTagName("country").item(0).innerHTML;
+                var genre = x[i].getElementsByTagName("genre").item(0).innerHTML;
+                var type = x[i].getAttribute("type");
+                var chargen = "";
+                for (j = 0; j < x[i].getElementsByTagName("characters").item(0).getElementsByTagName("character").length; j++){
+                     var gend = x[i].getElementsByTagName("characters").item(0).getElementsByTagName("character").item(j).getAttribute("gender");
+                     var char = x[i].getElementsByTagName("characters").item(0).getElementsByTagName("character").item(j).innerHTML;
+                     chargen = chargen + char + "(" + gend + ")" + "<br />";
+                }
+                var pic = x[i].getElementsByTagName("pic").item(0).innerHTML;
+                document.write("<tr><td>" + name1 + "<br/><img style=\" width:100px\"src=\"" + pic + "\"" + "</td><td>" + year + "</td><td>" +
+                    country + "</td><td>" + genre.split(",").join(",<br />") + "</td><td>" + type.split(",").join(",<br />") + "</td><td>" + chargen +
+                    "</td></tr>");
+
+            }
+            document.write("</table>");
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        myFunction();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* css list */
+/* 1) footer */
+/* 2) Jumbotorn */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+  background: url("https://images.unsplash.com/photo-1546593064-053d21199be1?ixlib=rb-1.2.1&auto=format&fit=crop&w=2080&q=80") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.font-1{
+  font-family: 'Pacifico', cursive;
+}
+
+/* Footer */
+
+footer {
+  background-color: #1b294d;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.jumbotron{
+    /* border-radius: 90px; */
+    opacity: 95%;
+}
+
+/* card */
+.touch {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.touch .card {
+  border: none;
+  border-radius: 1rem;
+}
+
+@media (min-width: 992px) {
+  .touch .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    transition: .2s;
+  }
+
+}
+
+.top{
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+@media (max-width: 576px) {
+  .top {
+    margin-left: 0px;
+    margin-right: 200px;
+  }
+
+}

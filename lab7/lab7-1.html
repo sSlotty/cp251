@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7-1</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
+
+    body {
+            font-family: 'Mitr', sans-serif;
+            background: url("https://images.unsplash.com/photo-1546593064-053d21199be1?ixlib=rb-1.2.1&auto=format&fit=crop&w=2080&q=80") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+    .card {
+        opacity: 90%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5 mb-5">
+        <h2>The XMLHttpRequest Object</h2>
+        <button type="button" onclick="loadDoc()" class="btn peach-gradient">Show Content</button>
+        <a type="button" href="index.php" class="btn aqua-gradient">Back</a>
+        <div class="card">
+            <div class="card-body" id="demo">
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+    function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("demo").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "info.txt", true);
+        xhttp.send();
+    }
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</body>
+
+</html>
+<?php 
+?>

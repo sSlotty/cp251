@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7-1</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
+
+        body {
+            font-family: 'Mitr', sans-serif;
+            background: url("https://images.unsplash.com/photo-1546593064-053d21199be1?ixlib=rb-1.2.1&auto=format&fit=crop&w=2080&q=80") no-repeat center center fixed;
+            background-size: cover;
+        }
+        tbody:nth-child(even){
+            background-color: rgb(132, 185, 253);
+        }
+        tbody:nth-child(odd){
+            background-color: rgb(76, 107, 148);
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <br><br>
+    <div class="container mt-5 mb-5">
+        <h2>The XMLHttpRequest Object</h2>
+        <button onclick="loadDoc()" class="btn peach-gradient">Get my CD collection</button>
+        <a type="button" href="index.php" class="btn aqua-gradient">Back</a>
+        <div class="card">
+            <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Data table</h3>
+            <div class="card-body">
+                <table id="table">
+                    <table id="demo" class="table table-bordered table-responsive-md table-striped text-center text-white">
+
+                    </table>
+                </table>
+            </div>
+        </div>
+        <!-- Editable table -->
+
+    </div>
+
+    <script>
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    myFunction(this);
+                }
+            };
+            xhttp.open("GET", "cd_catalog.xml", true);
+            xhttp.send();
+        }
+
+        function myFunction(xml) {
+            var i;
+            var xmlDoc = xml.responseXML;
+
+            var table = "<thead class="+"unique-color-dark"+"><tr><th>Artist</th><th>TITLE</th><th>COUNTRY</th><th>COMPANY</th><th>PRICE</th><th>YEAR</th></tr></thead>";
+
+            var x = xmlDoc.getElementsByTagName("CD");
+            for (i = 0; i < x.length; i++) {
+                table += "<tbody><tr><td>" +
+                    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("COMPANY")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue +
+                    "</td></tr></tbody>";
+            }
+            document.getElementById("demo").innerHTML = table;
+        }
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</body>
+
+</html>
+<?php 
+?>
