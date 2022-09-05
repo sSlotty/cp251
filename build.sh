@@ -3,7 +3,7 @@
 # Build script for serving static content instead of php files
 
 DEST="./public_html"
-html=".php"
+html=".html"
 
 mkdir -p "$DEST/"
 
